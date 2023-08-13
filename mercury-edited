@@ -493,7 +493,7 @@ function Library:create(options)
 		Name = "Mercury",
 		Size = UDim2.fromOffset(600, 400),
 		Theme = self.Themes[settings.Theme],
-		Link = "https://rlxl.com/fakesite"
+		Link = "https://rlxl.com/"
 	}, options)
 
 	if getgenv and getgenv().MercuryUI then
@@ -674,7 +674,7 @@ function Library:create(options)
 		Position = UDim2.new(0, 26, 0.5, 0),
 		BackgroundTransparency = 1,
 		Size = UDim2.new(1, -30, .6, 0),
-		Text = options.Link .. "/home",
+		Text = options.Link .. "/welcome",
 		Theme = {TextColor3 = "WeakText"},
 		TextSize = 14,
 		TextScaled = false,
