@@ -1,4 +1,25 @@
- local lp = game.Players.LocalPlayer
+--[[
+$$\   $$\  $$$$$$\  $$\       $$$$$$$\        $$\   $$\ $$$$$$$\  $$\ 
+$$ |  $$ |$$  __$$\ $$ |      $$  __$$\       $$ |  $$ |$$  __$$\ $$ |
+$$ |  $$ |$$ /  $$ |$$ |      $$ |  $$ |      $$ |  $$ |$$ |  $$ |$$ |
+$$$$$$$$ |$$ |  $$ |$$ |      $$ |  $$ |      $$ |  $$ |$$$$$$$  |$$ |
+$$  __$$ |$$ |  $$ |$$ |      $$ |  $$ |      $$ |  $$ |$$  ____/ \__|
+$$ |  $$ |$$ |  $$ |$$ |      $$ |  $$ |      $$ |  $$ |$$ |          
+$$ |  $$ | $$$$$$  |$$$$$$$$\ $$$$$$$  |      \$$$$$$  |$$ |      $$\ 
+\__|  \__| \______/ \________|\_______/        \______/ \__|      \__|
+
+This is not officially from rlxl. Whereabouts unknown due to it being fucking everywhere.
+]]
+
+--[[
+
+
+
+
+
+
+
+local lp = game.Players.LocalPlayer
 local tool;local handle;local knife;
 local animation1 = Instance.new("Animation")
 animation1.AnimationId = "rbxassetid://2467567750"
