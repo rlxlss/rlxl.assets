@@ -17,9 +17,7 @@ This is not officially from rlxl. Whereabouts unknown due to it being fucking ev
 
 
 
-
-
-local lp = game.Players.LocalPlayer
+ local lp = game.Players.LocalPlayer
 local tool;local handle;local knife;
 local animation1 = Instance.new("Animation")
 animation1.AnimationId = "rbxassetid://2467567750"
