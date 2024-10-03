@@ -41,16 +41,17 @@ end
 
 
 function IsAlive(Player) -- Simple sexy function
-  if not roles then return end 
+    if roles then
 	for i, v in pairs(roles) do
 		if Player.Name == i then
 			if not v.Killed and not v.Dead then
-				return true
+			    return true
 			else
-				return false
-			end
+			return false
+		end
 		end
 	end
+    end
 end
 
 
