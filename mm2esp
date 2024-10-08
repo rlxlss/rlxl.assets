@@ -10,7 +10,7 @@ local roles
 
 -- > Functions < --
 
-function CreateHighlight() -- make any new highlights for new players
+function CreateHighlight() 
 	for i, v in pairs(Players:GetPlayers()) do
 		if v ~= LP and v.Character and not v.Character:FindFirstChild("Highlight") then
 			local hl = Instance.new("Highlight")          
@@ -20,7 +20,7 @@ function CreateHighlight() -- make any new highlights for new players
 	end
 end
 
--- Threats table to hold the roles
+
 local threats = {
 	murd = nil,
 	sherriff = nil,
@@ -33,21 +33,18 @@ local function getRole()
 		return nil 
 	end
 
-	-- Attempt to invoke the server to get the role data
 	roles = ReplicatedStorage:FindFirstChild("GetPlayerData", true):InvokeServer()
 
 
-	-- Debugging: Print the structure of 'roles' to see if it contains valid data
+
 	for i, v in pairs(roles) do
 		print("Player:", i, "Role:", v.Role)
 	end
 
-	-- Reset threats to avoid stale data
 	threats.murd = nil
 	threats.sherriff = nil
 	threats.hero = nil
 
-	-- Check if the roles data is structured correctly
 	for i, v in pairs(roles) do
 		if v.Role == "Murderer" then
 			threats.murd = i
@@ -58,7 +55,7 @@ local function getRole()
 			threats.hero = i
 		end
 	end
-	print("d")
+	print("owo")
 	-- Check if the threats were properly populated
 	print("Murderer:", threats.murd)
 	print("Sheriff:", threats.sherriff)
@@ -105,7 +102,6 @@ function UpdateHighlights()
 	end
 end
 
--- Function to check if a player is alive
 function IsAlive(Player)
 	if Player.Character and Player.Character:FindFirstChild("Humanoid") then
 		if Player.Character.Humanoid.Health > 0 then
