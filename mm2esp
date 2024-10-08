@@ -1,8 +1,5 @@
 
 
---[[ Credits to Kiriot22 for the Role getter <3
-        - poorly coded by FeIix <3 ]]
-
 -- > Declarations < --
 
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
